@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JPIA CCC Chapter</title>
+    <link rel="icon" type="image/x-icon" href="jpialogo.png">
+
+    <style>
+
+
+        body {
+            font-family: 'Century Gothic', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #1400ac;
+            color: #f4f4f4;
+        }
+
+        .headercontainer {
+            
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-left: 45px;
+            
+      
+        }
+        .header1{
+            background-color: #1400ac;
+            padding: 3px;
+        }
+        header {
+            background-color: #ffd12d;
+            background-image: url(school-banner.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position:0cqi; background-position:0cqb;
+            color: #000000;
+            padding: 180px;
+            text-align: left;
+        }
+
+        .header {
+                                background-color: #f1f1f1;
+                                padding: 30px;
+                                text-align: center;
+                                }
+                                
+                                .navcontainer{
+                                    max-width: 100%;
+                                    background-color: #ffd12d;
+                                    padding: 5px;
+                                }
+
+                                #navbar {
+                                overflow: hidden;
+                                max-width: 100%;
+                                }
+
+                                #navbar a {
+                                float:left;
+                                display: block;
+                                color: #1400ac;
+                                text-align: center;
+                                padding: 12px;
+                                text-decoration: none;
+                                font-size: 15px;
+                                max-width: 100%;
+                                background-color: #ffd12d;
+                                font-weight: bold;
+                                margin-left: 85px;
+                                }
+
+                                #navbar a:hover {
+                                background-color: #ffffff;
+                                color: black;
+                                }
+                                
+                               content {
+                                padding: 16px;
+                                }
+
+                                .sticky {
+                                position: fixed;
+                                top: 0;
+                                width: 100%;
+                                background-color: #ffd12d;
+                                }
+
+                                .sticky + .content {
+                                padding-top: 60px;
+                                background-color: white;
+                                }
+        section {
+            padding: 10px;
+        }
+
+        .foot {
+            background-color: #f4f4f4;
+            color: #000000;
+            text-align: center;
+            padding: 3px;
+            bottom: 0;
+            width: 100%;
+        }   
+       
+    /* design for sharing form */
+
+    .comment-form {
+        margin: 10px;
+    }
+
+    #comment-input {
+        width: 100%;
+    }
+
+    .comment-list {
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+    }
+
+    .comment {
+        margin-bottom: 15px;
+    }
+
+    .logo {
+        margin-top: 2%;
+        float:inherit;
+        margin-left: 1.5%;
+    }
+        
+    </style>
+
+
+</head>
+<body>
+    <div class="headercontainer">
+    <div class="header1">
+        <img src="jpialogo.png" height="30px">
+        <img src="ccclogo.png" height="30px">
+        </div>
+        <h5 style="margin-left: 3px;">Junior Philippine Institute of Accountants - CCC</h5>
+    </div>
+    
+        <header></header>
+        <!--sample sticky nav-->          
+        
+        <div class="navcontainer"> 
+        <div id="navbar">
+            <a href="#home">Home</a>
+            <a href="gallery.html">Events</a>
+            <a href="orgchart.html">Organizational Chart </a>
+            <a href="mission.html">Mission</a>
+            <a href="vision.html">Vision</a>
+            <a href="contact.html">Contact Us</a>
+
+
+        </div></div>   
+        
+        
+    <section id="home">
+        <h2>Welcome, Tigers!</h2>
+        <p>This is the official website of the Junior Philippine Institute of Accountants - City College of Calamba</p>
+    </section>       
+
+
+    <div class="home-banner">
+        <img src="home-banner.png">
+
+    </div>
+
+        <section id="contact">
+            <p style="text-align: justify;"> Nature of Organization: The JPIA-CCC Chapter is an Academic Organization
+                that is dedicated for the Department of Business and Accountancy. It aims to help
+                students to become competitive professionals in the future implementing activities
+                related to both Bachelor of Science in Business and Accountancy (BSA) and Bachelor
+                of Science in Accounting Information System (BSAIS) programs.</p>
+        </section>
+
+        <div class="comment-form">
+            <label for="comment-input">Talk to us today!</label>
+            <textarea id="comment-input" rows="4" placeholder="Type your thoughts/suggestions/comments here"></textarea>
+            <button onclick="postComment()">Post It!</button>
+        </div>
+        <div class="comment-list">
+            <!-- Display comments here -->
+        </div>
+        </section>
+        </div>
+        <script src="script.js">
+
+            function postComment() {
+                const commentInput = document.getElementById('comment-input').value;
+
+                if (commentInput.trim() !== '') {
+                    const commentList = document.querySelector('.comment-list');
+                    const newComment = document.createElement('div');
+                    newComment.className = 'comment';
+                    newComment.textContent = commentInput;
+
+                    commentList.appendChild(newComment);
+
+                    // Clear the comment input after posting
+                    document.getElementById('comment-input').value = '';
+                }
+            }
+        </script>
+
+                    <!--script for sticky nav-->
+                    <script>
+                        window.onscroll = function() {myFunction()};
+                        
+                        var navbar = document.getElementById("navbar");
+                        var sticky = navbar.offsetTop;
+                        
+                        function myFunction() {
+                          if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                          } else {
+                            navbar.classList.remove("sticky");
+                          }
+                        }
+                        </script>
+
+    <div class="foot">
+            <p>&copy; 2024 JPIA Organization. All rights reserved.</p>  
+    </div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JPIA CCC Chapter</title>
+    <link rel="icon" type="image/x-icon" href="jpialogo.png">
+
+<style>
+
+    body {
+            font-family: 'Century Gothic', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;}
+    /*Design for gallery*/
+        * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+    max-width: 300px;
+    position: relative;
+    margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text 
+    .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    }*/
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+    background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+
+    /*design for navbar and header*/
+    .headercontainer {
+            
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            background-color: #1400ac;
+            color: white;
+            padding-left: 33%;
+      
+        }
+        .header1{
+            background-color: #1400ac;
+            padding: 3px;
+        }
+        header {
+            background-color: #ffd12d;
+            background-image: url(school-banner.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position:0cqi; background-position:0cqb;
+            color: #000000;
+            padding: 180px;
+            text-align: left;
+        }
+
+        .header {
+                                background-color: #f1f1f1;
+                                padding: 30px;
+                                text-align: center;
+                                }
+                                
+                                .navcontainer{
+                                    max-width: 100%;
+                                    background-color: #ffd12d;
+                                    padding: 5px;
+                                }
+
+                                #navbar {
+                                overflow: hidden;
+                                max-width: 100%;
+                                }
+
+                                #navbar a {
+                                float:left;
+                                display: block;
+                                color: #1400ac;
+                                text-align: center;
+                                padding: 12px;
+                                text-decoration: none;
+                                font-size: 15px;
+                                max-width: 100%;
+                                background-color: #ffd12d;
+                                font-weight: bold;
+                                margin-left: 85px;
+                                }
+
+                                #navbar a:hover {
+                                background-color: #ffffff;
+                                color: black;
+                                }
+                                
+                               content {
+                                padding: 16px;
+                                }
+
+                                .sticky {
+                                position: fixed;
+                                top: 0;
+                                width: 100%;
+                                background-color: #ffd12d;
+                                }
+
+                                .sticky + .content {
+                                padding-top: 60px;
+                                background-color: white;
+                                }
+</style>
+</head>
+<body>
+    <div class="headercontainer">
+        <div class="header1">
+            <img src="jpialogo.png" height="30px">
+            <img src="ccclogo.png" height="30px">
+            </div>
+            <h5 style="margin-left: 3px;">Junior Philippine Institute of Accountants - CCC</h5>
+        </div>
+        
+            <!--sample sticky nav-->          
+            
+            <div class="navcontainer"> 
+            <div id="navbar">
+                <a href="jpiawebsite.html">Home</a>
+                <a href="gallery.html">Events</a>
+                <a href="orgchart.html">Organizational Chart </a>
+                <a href="mission.html">Mission</a>
+                <a href="#vision">Vision</a>
+                <a href="#contact">Contact Us</a>
+    
+    
+            </div></div>   
+        <!--script for sticky nav-->
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+            }
+            </script>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 10</div>
+        <img src="org1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 10</div>
+        <img src="org2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 10</div>
+        <img src="org3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 10</div>
+            <img src="org4.jpg" style="width:100%">
+            </div>
+        
+        <div class="mySlides fade">
+                <div class="numbertext">5 / 10</div>
+                <img src="org5.jpg" style="width:100%">
+                </div>
+
+        <div class="mySlides fade">
+                 <div class="numbertext">6 / 10</div>
+                 <img src="org6.jpg" style="width:100%">
+                 </div>
+
+        <div class="mySlides fade">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="org7.jpg" style="width:100%">
+                    </div>
+
+        <div class="mySlides fade">
+                    <div class="numbertext">8 / 10</div>
+                    <img src="org8.jpg" style="width:100%">
+                    </div>
+        <div class="mySlides fade">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="org9.jpg" style="width:100%">
+                    </div>
+                    
+        <div class="mySlides fade">
+                    <div class="numbertext">10 / 10</div>
+                    <img src="org10.jpg" style="width:100%">
+                    </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span> 
+        <span class="dot" onclick="currentSlide(9)"></span> 
+        <span class="dot" onclick="currentSlide(10)"></span>  
+        </div>
+    
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+</body></html>

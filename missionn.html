@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JPIA CCC Chapter</title>
+    <link rel="icon" type="image/x-icon" href="jpialogo.png">
+    
+    <style>
+    /* design for image hover - right */
+
+    .containerr {
+        position: relative;
+        width: 50%;
+        }
+
+        .imagee {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+        
+        .overlayy {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+        }
+
+        .containerr:hover .overlayy {
+        opacity: 1;
+        width:350%;
+        }
+
+
+        .textt {
+        color: white;
+        font-size: 17px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-wrap: balance;
+        text-align: justify;
+        }
+
+
+        /* design for image hover - left */
+
+        .container {
+        position: relative;
+        width: 50%;
+        }
+
+        .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+
+        .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+        }
+
+        .container:hover .overlay {
+        opacity: 1;
+        width: 350%;
+        }
+
+        .text {
+        color: white;
+        font-size: 17px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-wrap: balance;
+        text-align: justify;
+        }
+
+        .mainbox {
+            position:left;
+            display:inline-block;
+            width:50%;
+            margin-left: 5%;
+    
+        }
+
+        .secondbox {
+            background-image:url(ge.png);
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- for mission and vision -->
+
+    <div class="secondbox">
+    <div class="mainbox">
+    <div class="containerr">
+        <img src="mission.png" alt="Avatar" class="imagee">
+        <div class="overlayy">
+          <div class="textt">We, the Junior Philippine Institute of Accountants – CCC Chapter (JPIA – CCC Chapter), 
+            dedicate our optimum knowledge, talents, and intangible leadership skills to harness and fully utilize 
+            the skills of the Department of Business and Accountancy students by leading them with integrity, accountability,
+            and passion. Furthermore, we implement activities that will significantly help them to  become competitive
+            professionals in the future. 
+</div>
+        </div>
+      </div>
+    
+    <div class="container">
+        <img src="vision.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">The Junior Philippine Institute of Accountants – CCC Chapter (JPIA – CCC Chapter)
+            envisions itself continuing the legacy of the former leaders of the organization and being the most
+            active and best-performing organization and at the same time embodying the core values of City
+            College of Calamba simultaneously. In addition, we aim to mark a tangible legacy by promoting an
+            inclusive and harmonic environment for the students and equipping them with knowledge and  experiences
+            that will form part of their aspirations in their desired careers.</div>
+        </div>
+      </div>
+    </div></div>
+</body>
